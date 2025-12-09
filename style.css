@@ -1,0 +1,364 @@
+:root {
+
+    --primary-color: #1f3a93;
+    --secondary-color: #4a90e2;
+    --text-color: #e0e0e0;
+    --bg-color: #1a1a2e;
+    --item-bg-color: #2a2a4e;
+    --dizi-accent-color: #77e3f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+header img.logo {
+    height: 50px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: var(--text-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    background: #1e1e38;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.7rem 1.2rem;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.container h3 {
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+    padding-bottom: 10px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.container ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+.container li {
+    background-color: var(--item-bg-color);
+    margin-bottom: 8px;
+    padding: 12px 15px;
+    border-radius: 5px;
+    border-left: 4px solid var(--secondary-color);
+    transition: background-color 0.3s, transform 0.2s ease;
+    color: var(--text-color);
+}
+
+.container li.dizi {
+    border-left-color: var(--dizi-accent-color);
+    color: var(--dizi-accent-color);
+}
+
+.container li:hover {
+    background-color: #3a3a6a;
+    transform: translateX(5px);
+}
+
+.container .aciklama {
+    font-style: italic;
+    color: #cccccc;
+    margin-bottom: 1rem;
+    border-left: 4px solid #444;
+    padding-left: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    background-color: #1e1e38;
+    font-size: 0.9rem;
+}
+
+
+
+.iletisim-text-karti {
+    background-color: var(--item-bg-color);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid var(--secondary-color);
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.iletisim-text-karti p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+
+.iletisim-butonlari {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.iletisim-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none !important;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.2s, background-color 0.3s;
+    min-width: 250px;
+}
+
+
+.btn-telefon {
+    background-color: #27ae60;
+}
+
+
+.btn-mail {
+    background-color: var(--secondary-color);
+}
+
+
+.iletisim-btn:hover {
+    transform: translateY(-5px);
+    opacity: 0.9;
+}
+
+/* --- İletişim Formu CSS --- */
+
+.form-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: var(--item-bg-color);
+    padding: 2rem;
+    border-radius: 15px;
+    border-left: 5px solid var(--secondary-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--bg-color);
+    border: 1px solid #444;
+    border-radius: 5px;
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.3);
+}
+
+.gonder-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.gonder-btn:hover {
+    background-color: #357abd;
+    transform: translateY(-3px);
+}
+
+.gonder-btn:active {
+    transform: translateY(1px);
+}
+
+/* --- İzleme Listesi ve Resimli Yapı --- */
+
+.seri-kategorisi {
+    margin-bottom: 3rem;
+    /* Kategoriler arası boşluk */
+}
+
+/* Başlık ve Sayaç Stili */
+.seri-kategorisi h3 {
+    display: flex;
+    justify-content: space-between;
+    /* Başlık sola, sayaç sağa */
+    align-items: center;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.sayac {
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: var(--secondary-color);
+    padding: 5px 10px;
+    border-radius: 15px;
+    min-width: 60px;
+    text-align: center;
+}
+
+/* Resim ve Metin Yan Yana */
+.bolum-icerik {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    /* Üstten hizala */
+}
+
+.bolum-gorsel {
+    width: 150px;
+    /* Resim genişliği sabit */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 2px solid #333;
+    object-fit: cover;
+}
+
+/* Mobilde resim ve metni alt alta al */
+@media (max-width: 768px) {
+    .bolum-icerik {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bolum-gorsel {
+        width: 200px;
+        margin-bottom: 10px;
+    }
+
+    .aciklama {
+        border-left: none !important;
+        border-top: 4px solid #444;
+        padding-top: 10px;
+    }
+}
+
+/* Checkbox (Tik) Stili */
+.izleme-listesi li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* Üzerine gelince el işareti çıksın */
+}
+
+.izleme-listesi input[type="checkbox"] {
+    margin-right: 15px;
+    width: 18px;
+    height: 18px;
+    accent-color: var(--secondary-color);
+    /* Tik rengi mavi olsun */
+    cursor: pointer;
+}
+
+/* Standart tarayıcılar için oku gizler */
+details>summary {
+    list-style: none;
+    cursor: pointer;
+    /* Üzerine gelince el işareti çıksın */
+}
+
+/* Chrome, Safari ve eski tarayıcılar için oku gizler */
+details>summary::-webkit-details-marker {
+    display: none;
+}
+
+/* 1. Animasyonun Tanımı (Yukarıdan aşağı süzülme) */
+@keyframes listeAcilisEfekti {
+    from {
+        opacity: 0; /* Başlangıçta görünmez */
+        transform: translateY(-15px); /* Hafif yukarıda başla */
+    }
+    to {
+        opacity: 1; /* Tam görünür */
+        transform: translateY(0); /* Yerine otur */
+    }
+}
+
+/* 2. Liste açıldığında animasyonu tetikle */
+details[open] .izleme-listesi {
+    animation: listeAcilisEfekti 0.9s ease-out forwards;
+}
+
+/* 3. Tıklanan başlık kısmına (Summary) hafif bir geçiş efekti */
+details summary {
+    transition: background-color 0.9s ease;
+    border-radius: 8px; /* Kenarları hafif yuvarlatır */
+}
+
+/* Mouse ile üzerine gelince başlığın rengi hafif değişsin */
+details summary:hover {
+    background-color: rgba(0, 0, 0, 0.05); /* Çok hafif gri bir ton */
+}
