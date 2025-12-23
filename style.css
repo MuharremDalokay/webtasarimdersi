@@ -174,7 +174,6 @@ footer {
 }
 
 
-
 .form-container {
     max-width: 700px;
     margin: 0 auto;
@@ -246,9 +245,11 @@ footer {
     
 }
 
+
 .seri-kategorisi h3 {
     display: flex;
     justify-content: space-between;
+   
     align-items: center;
     border-bottom: 2px solid var(--secondary-color);
     padding-bottom: 10px;
@@ -265,22 +266,25 @@ footer {
     text-align: center;
 }
 
+
 .bolum-icerik {
     display: flex;
     gap: 20px;
     margin-bottom: 20px;
     align-items: flex-start;
+    
 }
 
 .bolum-gorsel {
     width: 150px;
-
+ 
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     border: 2px solid #333;
     object-fit: cover;
 }
+
 
 @media (max-width: 768px) {
     .bolum-icerik {
@@ -306,7 +310,7 @@ footer {
     display: flex;
     align-items: center;
     cursor: pointer;
-  
+
 }
 
 .izleme-listesi input[type="checkbox"] {
@@ -314,15 +318,17 @@ footer {
     width: 18px;
     height: 18px;
     accent-color: var(--secondary-color);
-  
+
     cursor: pointer;
 }
+
 
 details>summary {
     list-style: none;
     cursor: pointer;
   
 }
+
 
 details>summary::-webkit-details-marker {
     display: none;
@@ -348,11 +354,10 @@ details[open] .izleme-listesi {
 
 details summary {
     transition: background-color 0.9s ease;
-    border-radius: 8px; 
+    border-radius: 8px;
 }
 
 
 details summary:hover {
     background-color: rgba(0, 0, 0, 0.05); 
-
 }
