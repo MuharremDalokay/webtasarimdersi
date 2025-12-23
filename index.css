@@ -180,3 +180,34 @@ footer {
     background-color: #1e1e38;
     font-size: 0.9rem;
 }
+
+/* Açılır menü kutusunun hizalanması */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+/* Alt menü kutusunun tasarımı (Senin renklerinle) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1e1e38; /* Senin nav rengin */
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.4);
+    z-index: 100;
+    border-radius: 5px;
+    top: 100%; /* Menünün tam altına açılması için */
+    left: 10px; /* Senin margin değerinle uyumlu olması için */
+}
+
+/* Alt menüdeki linklerin alt alta gelmesi */
+.dropdown-content a {
+    display: block;
+    text-align: left;
+    margin: 5px;
+}
+
+/* Mouse ile gelince açma tetikleyicisi */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
